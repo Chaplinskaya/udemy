@@ -1,4 +1,4 @@
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+/*const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -14,16 +14,24 @@ const d = prompt('На сколько его оцените?', '');
 
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
-
+*/
 for(let i=1; i<=2; i++) {
     const a = prompt('Один из просмотренных фильмов?', '');
     const b = prompt('На сколько фильм оцените?', '');
+
+    if (a!=null && b!=b && a!='' && b!='' && a.length<50) {
+        personalMovieDB.movies[a] = b;
+        console.log('done');
+    } else {
+        console.log('error');
+        i--;
+    }
 
     personalMovieDB.movies[a] = b;
 }
 
 console.log(personalMovieDB);
-
+/*
 if (0) {
     console.log('Ok');
 } else {
@@ -71,7 +79,7 @@ let num=50;
     num++;
 }
 while( num<55 );*/
-
+/*
 for(let i=1; i<7; i++) {
     console.log(num);
     num++;
