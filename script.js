@@ -1,4 +1,5 @@
-/*const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+'use strict';
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -7,6 +8,8 @@ const personalMovieDB = {
     genres: {},
     privat: false
 };
+
+/*
 const a = prompt('Один из просмотренных фильмов?', '');
 const b = prompt('На сколько его оцените?', '');
 const c = prompt('Один из просмотренных фильмов?', '');
@@ -15,21 +18,19 @@ const d = prompt('На сколько его оцените?', '');
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 */
-for(let i=1; i<=2; i++) {
+
+for(let i=0; i<2; i++) {
     const a = prompt('Один из просмотренных фильмов?', '');
     const b = prompt('На сколько фильм оцените?', '');
 
-    if (a!=null && b!=b && a!='' && b!='' && a.length<50) {
+    if (a!=null && b!=null && a!='' && b!='' && a.length<50) {
         personalMovieDB.movies[a] = b;
         console.log('done');
     } else {
         console.log('error');
         i--;
     }
-
-    personalMovieDB.movies[a] = b;
 }
-
 console.log(personalMovieDB);
 /*
 if (0) {
@@ -71,10 +72,10 @@ while(number<55) {
     number++;
 }
 */
-
+/*
 let num=50;
 
-/*do {
+do {
     console.log(num);
     num++;
 }
@@ -92,3 +93,4 @@ for(let i=1; i<10; i++) {
     }
     console.log(i);
 }
+*/
