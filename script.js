@@ -63,6 +63,17 @@ function showMyBd(hidden) {
     }
 }
 showMyBd(personalMovieDB.privat);
+
+function writeYourGenres() {
+    for (let i=1; i<=3; i++) {
+        const genre = prompt(`ВАШ ЛЮБИМЫЙ ЖАНР ПОД НОМЕРОМ ${i}`);
+        personalMovieDB.genres[i-1]=genre;
+        //personalMovieDB.genres[i-1]=prompt(`ВАШ ЛЮБИМЫЙ ЖАНР ПОД НОМЕРОМ ${i}`);
+    }
+}
+writeYourGenres();
+
+
 /*
 if (0) {
     console.log('Ok');
